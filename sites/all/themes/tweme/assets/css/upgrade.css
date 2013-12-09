@@ -1,0 +1,234 @@
+html,body{height:93%;font-family: 'Rosario', sans-serif;}
+#header, #main, #footer, #user-login-form{ display: none; }
+pre {
+	word-break: normal;
+	word-wrap: normal;
+	height: 100%;
+}
+/** Carousel **/
+.carousel{margin-bottom: 0px;}
+.carousel,.item,.active{height:100%;}
+.vslider{height:100%;z-index: 100; position: relative; background: url(../images/bg2.png) top left repeat;}
+.vslide{height:100%;background-position:center;background-size:cover;}
+.vertical .carousel-inner {
+  height: 100%;
+}
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+.carousel.vertical .active {
+  top: 0;
+}
+.carousel.vertical .next {
+  top: 100%;
+}
+.carousel.vertical .prev {
+  top: -100%;
+}
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+.carousel.vertical .active.left {
+  top: -100%;
+}
+.carousel.vertical .active.right {
+  top: 100%;
+}
+.carousel.vertical .item {
+    left: 0;
+}
+.vcarousel-caption { 
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: transparent;
+}
+.vcarousel-caption h1{
+	font-family: 'Pacifico', cursive;
+    color: #444;
+	font-size: 44px;
+	line-height: 70px;
+	text-shadow: 1px 2px 2px #fff;
+	display: inline-block;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.vcarousel-caption , .vcarousel-caption p{
+	font-size: 33px;
+	color: #444;
+	text-shadow: 1px 2px 2px #fff;
+	line-height: 62px;
+}
+.vcarousel-caption .img-thumbnail{
+	background: transparent;
+	border-width: 0px;
+	max-height: 70px;
+}
+.vcarousel-caption .row.skills{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.vcarousel-caption .slide1width{
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.vcarousel-caption .row.skills h3{
+	font-size: 18px;
+	margin: 0px;
+	text-align: left;
+}
+.font-lg{
+	font-size: 33px;
+	color: #444;
+	line-height: 62px;
+	text-shadow: 1px 2px 2px #fff;
+}
+.font-building{
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	font-size: 62px;
+	line-height: 80px;
+	letter-spacing: 3px;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.font-highlight{
+	text-shadow: 1px 2px 2px yellow;
+}
+.rotate-10{
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.rotate10{
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.rotate90 {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.carousel-control.bottom{
+   top: 90%;
+   right: 25px;
+   left: auto;
+   line-height: 35px;
+   outline: none;
+}
+.carousel-control.bottom.second{
+   right: 85px;
+}
+.va-text {
+  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */ 
+  display: -ms-flexbox;   /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21+ */
+  display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+  -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+  -ms-flex-align: center; /* You know the drill now… */
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+/** Navbar **/
+.navbar{
+	margin-bottom: 0px;
+}
+.navbar > .container .navbar-brand {
+	margin-left: 10px;
+	margin-right: 25px;
+	margin-top: 17px;
+	padding: 0px;
+}
+.custom-navbar{
+	border-top: 5px solid #f6f4f4;
+
+
+}
+.custom-mainmenu > ul {
+	height: 100%;
+}
+.custom-mainmenu > ul > li{
+	position: relative;
+	overflow: hidden;
+	margin-top: -5px;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.custom-mainmenu > ul > li > a{
+	font-size: 2.5em;
+	line-height: 2em;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+	
+	.custom-mainmenu > ul > li .left-half, .custom-mainmenu > ul > li .right-half {
+		width: 50%;
+		height: 100%;
+		background: rgba(235,212,239, 0.3);
+		position: absolute;
+		transition: all 200ms linear; 
+		-webkit-transition: all 200ms linear;  
+		-moz-transition: all 200ms linear;
+		border-top: 5px solid #a81ec1;
+	}
+
+	.custom-mainmenu > ul > li .left-half { left: -50%; top: 0; }
+	.custom-mainmenu > ul > li .right-half { right: -50%; top: 0; }
+
+	.custom-mainmenu > ul > li:hover .left-half { left: 0; top: 0; }
+	.custom-mainmenu > ul > li:hover .right-half { right: 0; top: 0; }
+
+/**
+.navbar,
+.navbar * {
+  z-index: 400;
+}
+.navbar-medium .navbar-inner {
+  border-top: 5px solid #f6f4f4;
+}
+.navbar-medium .nav > li > a {
+  font-size: 2.5em;
+  line-height: 2em;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+}
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .nav > li > a:focus{
+  border-top: 5px solid #a81ec1;
+}
+.navbar .navbar-brand {
+  padding: 21px 70px;
+}**/

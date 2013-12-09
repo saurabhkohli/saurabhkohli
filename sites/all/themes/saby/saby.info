@@ -1,0 +1,26 @@
+
+name = saby
+description = This theme has been designed specially for saurabhkohli.
+package = Core
+version = VERSION
+core = 7.x
+
+regions[top-navigation] = Top Navigation
+regions[header] = Header
+regions[main-navigation] = Main Navigation
+regions[highlighted] = Highlighted
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[bottom_ad] = Bottom Ad
+regions[footer] = Footer
+regions[copyright] = Copyright
+
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/colors.css
+stylesheets[print][] = css/print.css
+
+scripts[] = js/bootstrap.min.js
+
+settings[shortcut_module_link] = 0
+

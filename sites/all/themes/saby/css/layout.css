@@ -1,0 +1,272 @@
+/* Global Styles */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  margin: 0px;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+p{
+  margin-bottom: 10px;
+}
+
+img{
+  border: none;
+}
+ul, ol{
+  list-style: none;
+}
+
+
+/* ----- New Clearfix | http://perishablepress.com/press/2009/12/06/new-clearfix-hack/ ----- */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}             
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.clearfix, .gain-layout{
+  *zoom:1;
+}
+
+.float-left{
+	float: left;
+}
+
+
+
+
+.page-wrapper {
+ 	background-color: #dddddd;
+}
+	.page-wrapper .body-wrapper {
+		background-color: #ffffff;
+		margin: 0 auto;
+		width: 1000px;
+	}
+	.page-wrapper .body-wrapper .header {
+      margin-left: 10px;
+      margin-right: 10px;
+		}
+
+		.page-wrapper .body-wrapper .content-wrapper {
+			margin: 0 10px;
+			overflow: hidden;
+		}
+
+			.page-wrapper .body-wrapper .content-wrapper .region-content {
+				float: left;
+				margin-right: 20px;
+				width: 660px;
+			}
+			.page-wrapper .body-wrapper .content-wrapper .region-sidebar {
+				width: 300px;
+				float: left;
+			}
+
+
+/* Site Header */
+.header .site-logo{
+  float: left;
+  margin: 8px 20px 10px 0px;
+}
+
+.header .region-header{
+  float: left;
+  margin-bottom: 10px;
+}
+
+
+/* Menu CSS, Update the first class name as this is based on the region name */
+.main-navigation {
+  padding-bottom: 10px;
+  position: relative;
+}
+  .main-navigation .main-nav-left-design {
+    float: left;
+    background: url("/sites/all/themes/ijiyo/images/nav-border-left.png") no-repeat;
+    width: 58px;
+    height: 57px;
+	position: relative;
+	left: -54px;
+  }
+
+  .main-navigation .main-nav-right-design {
+    float: right;
+    background: url("/sites/all/themes/ijiyo/images/nav-border-right.png") no-repeat;
+    width: 58px;
+    height: 57px;
+	position: relative;
+	right: -55px;
+  }
+
+  .main-navigation .region-main-navigation {
+    background: url("/sites/all/themes/ijiyo/images/nav-border-repeat.png") repeat-x;
+    height: 57px;
+    float: left;
+    width: 996px;
+	position: absolute;
+	left: 1px;
+  }
+    .main-navigation .region-main-navigation ul {
+	  padding-left: 30px;
+	  padding-top: 6px;
+	}
+
+    .main-navigation region-main-navigation ul.menu{
+      list-style: none;
+      overflow: hidden;
+    }
+      .main-navigation .region-main-navigation ul.menu li{
+        background: url("/sites/all/themes/ijiyo/images/iJiyo.png") no-repeat scroll 0px 3px transparent;
+        float: left;
+        margin-right: 45px;
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 20px;
+      }
+        .main-navigation .region-main-navigation ul.menu li a{
+          color: #ffffff;
+          text-decoration: none;
+		  padding-left: 3px;
+        }
+.top-navigation {
+  float: right;
+  margin-right: 30px;
+}
+  .top-navigation .top-nav-left-design {
+    background: url("/sites/all/themes/ijiyo/images/top-nav-left.png") no-repeat;
+    width: 15px;
+    height: 32px;
+  }
+  .top-navigation .top-nav-right-design {
+    background: url("/sites/all/themes/ijiyo/images/top-nav-right.png") no-repeat;
+    width: 15px;
+    height: 32px;
+  }
+  .region-top-navigation {
+    float: left;
+  }
+  .region-top-navigation .content {
+    overflow: hidden;
+  }
+    .region-top-navigation .content ul {
+      float: right;
+      overflow: hidden;
+      background-color: #7F430F;
+      padding: 9px 7px 8px;
+    }
+    .region-top-navigation .content ul li {
+      float: left;
+      text-transform: uppercase;
+      margin-right: 24px;
+    }
+    .region-top-navigation .content ul li.last {
+      margin-right: 0px;
+    }
+      .region-top-navigation .content ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-style: italic;
+        font-family: Georgia, Arial;
+      }
+
+
+/* Ads */
+.region-top-ad, .region-bottom-ad{
+  text-align: center;
+  width: 900px;
+  height: 90px;
+  border: 1px solid #777777;
+  background-color: #dddddd;
+  margin: 0px auto 10px auto;
+}
+.dummy-ad-text{
+  color: #000000;
+  font-family: Arial;
+  font-size: 25px;
+  padding: 14px 0 0;
+}
+
+/* Blocks */
+.block {
+  padding-bottom: 20px;
+}
+
+/* Tech Updates block on Home Page */
+.block-tech-updates {}
+
+  .block-tech-updates .block-title {}
+
+  .block-tech-updates .content {}
+
+    .block-tech-updates .content .views-row {
+      margin-bottom: 8px;
+    }
+      .block-tech-updates .content .views-row .views-field-field-category {
+        text-transform: uppercase;
+        font-size: 10px;
+      }
+  
+      .block-tech-updates .content .views-row .views-field-title {}
+
+        .block-tech-updates .content .views-row .views-field-title a {
+          font-family: "Times";
+          font-size: 14px;
+          font-style: italic;
+          text-decoration: none;
+        }
+        .block-tech-updates .content .views-row .views-field-title a:hover {
+          text-decoration: underline;
+        }
+
+/* Homepage Top Search */
+#search-block-form{
+  margin-top: 80px;
+  margin-left: 20px;
+}
+#search-block-form .form-item-search-block-form{
+  background: url("/sites/all/themes/ijiyo/images/search-bar-left.png") no-repeat scroll 0px 0px transparent;
+  display: block;
+  float: left;
+  height: 37px;
+  width: 408px;
+  position: absolute;
+  z-index: 9;
+}
+  #search-block-form .form-item-search-block-form input{
+    background: url("/sites/all/themes/ijiyo/images/search-bar-right.png") no-repeat scroll 405px 0 transparent;
+    border: medium none;
+    height: 37px;
+    padding: 0 20px;
+    width: 380px;
+  }
+  #search-block-form .form-actions{
+    background: url("/sites/all/themes/ijiyo/images/search-button-right.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 37px;
+    left: 408px;
+    position: relative;
+    width: 98px;
+  }
+    #search-block-form .form-actions input{
+      /*background: url("/sites/all/themes/ijiyo/images/iJiyo.png") no-repeat scroll 0 0 transparent;
+	  width: 15px;
+	  height: 20px;*/
+      background: none repeat scroll 0 0 transparent;
+      border: medium none;
+      color: #FFFFFF;
+      font-weight: bold;
+      padding-left: 24px;
+      padding-top: 10px;
+    }
+  
